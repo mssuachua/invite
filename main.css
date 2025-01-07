@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat&display=swap');
+body {
+    background-color: #f9f9f9;
+    color: #3e3e3e;
+    margin: 0;
+    padding: .5rem .8rem;
+    background-repeat: no-repeat;
+    font-family: "Dancing Script", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}
+
+img {
+    max-width: 80px;
+    height: auto;
+}
+
+div {
+    text-align: center;
+}
+
+header {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    box-shadow: 1px 2px 4px rgba(0,0,0,.26);
+    color: #f3f3f3;
+    background-color: #564e4e;
+    border-radius: 5px;
+}
+
+header > * {
+    align-self: center;
+    padding-top: 2px;
+}
+header p {
+    grid-column: 2 / 13;
+    margin: 0;
+    font-size: 33px;
+    letter-spacing: 0.2px;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+}
+
+#modal-popup {
+    min-height: 100vh;
+    background-color: rgba(0,0,0,.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#modal-popup.show {
+    opacity: 1;
+    pointer-events: all;
+}
+#modal {
+    background-image:url(/imp/background1.jpg);
+    background-color: #f3f3f3;
+    margin-top: 20px;
+    max-width: 100%;
+    position: relative;
+    left: 50%;
+    top: 100px;
+    transform: translateX(-50%);
+    padding-top: 2px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.buttonGroup{
+    margin-top: 150px;
+}
+button{
+    position: absolute;
+    display: flex;
+    border: none;
+    color: #ddd;
+    padding: 5px 15px;
+    font-size: 24px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,.5);
+    font-family: "Dancing Script", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    border-radius: 10px;
+}
+.button--no{
+    left: 60%;
+    background-color: rgb(250, 42, 42);
+}
+.button--yes{
+    margin-left: 50px;
+    background: rgb(247, 66, 126);
+}
+
+/* #agree {
+    margin-top: 150px;
+    margin-right: 50px;
+    background: rgb(247, 66, 126);
+    color: #ddd;
+    border: none;
+    padding: 5px 15px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,.5);
+    font-family: "Dancing Script", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* #deny {
+    position: absolute;
+    display: flex;
+    background-color: rgb(250, 42, 42);
+    color: #ddd;
+    border: none;
+    padding: 5px 15px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,.5);
+    font-family: "Dancing Script", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    border-radius: 10px;
+    cursor: pointer;
+} */
+
+#Send {
+    background-color: rgb(30, 163, 224);
+    color: #ddd;
+    border: none;
+    padding: 5px 15px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,.5);
+    font-family: "Dancing Script", serif;
+    text-decoration: none;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}

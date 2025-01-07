@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shorcut icon" href="imp/heart.png">
+    <title>HEY BAE !!</title>
+    <link rel="stylesheet" href="main.css">
+    
+</head>
+<body background="/imp/background3.png">
+    <div class="container">
+        <header> 
+            <img src="imp/heart.png">
+            <p>Cuối tuần này... em đi chơi với anh nha</p>
+        </header>
+    </div>
+    <div class ="buttonGroup">
+        <button id="agree" class="button--yes">Đồng ý</button>
+        <button id="deny" class="button--no">Hông đi</button>
+    </div>
+    <div id="modal-popup">
+        <div id="modal">
+            <h3>
+                <p>Thứ mấy em rảnh thì nhắn cho anh nhá!</p>
+            </h3>
+            <a href="https://www.messenger.com/t/100004191005719/" id="Send" target="_blank">Nhắn tin cho anh</a>
+        </div>
+    </div>
+    <script>
+        const agree = document.getElementById('agree');
+        const deny = document.getElementById('deny');
+        const modal_popup = document.getElementById('modal-popup');
+        agree.addEventListener('click', ()=> {
+            modal_popup.classList.add('show');
+        });
+        // deny.addEventListener('click', ()=> {
+        //     modal_popup.classList.add('show');
+        // });
+
+        modal_popup.addEventListener('click', (event) => {
+            if (event.target == modal_popup) {
+            modal_popup.classList.remove('show') }
+        })
+        const b = document.querySelector('button.button--no')
+        b.addEventListener('click', moveHover)
+
+        function moveHover(){
+        const i=Math.floor(Math.random()*300)+1;
+        const j=Math.floor(Math.random()*700)+1;
+    
+        b.style.left =i+'px'
+        b.style.top=j+'px'
+        }
+    </script>
+</body>
+</html>
