@@ -62,7 +62,7 @@ header img {
     pointer-events: all;
 }
 #modal {
-    background-image:url(/imp/background1.jpg);
+    background-image:url(imp/background1.jpg);
     background-color: #f3f3f3;
     margin-top: 20px;
     max-width: 100%;
